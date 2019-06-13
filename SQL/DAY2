@@ -1,0 +1,14 @@
+EXCERCISE 3
+
+CREATE TABLE Player(
+PId INTEGER CONSTRAINT pk PRIMARY KEY,
+PName VARCHAR2(20) CONSTRAINT nn NOT NULL,
+Ranking INTEGER)
+
+___________________________________________________________________________________________________________________________
+
+EXCERCISE 4
+TName VARCHAR2(30) NOT NULL,
+StartDt DATE NOT NULL,
+EndDt DATE NOT NULL,
+Prize INTEGER NOT NULL)
