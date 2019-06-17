@@ -40,6 +40,17 @@ ________________________________________________________________________________
 ASS 6
 ALTER TABLE STORE RENAME COLUMN Name TO StoreName
 ___________________________________________________________________________________________________________________________
+ASS 7
+CREATE TABLE Bill(
+BillNo NUMBER PRIMARY KEY,
+StoreName VARCHAR2(20) REFERENCES Store(StoreName),
+ShopperId NUMBER REFERENCES Shopper(ShopperId),
+ArCode CHAR(5) REFERENCES Article(ArCode),
+Amount NUMBER,
+BillDate DATE, 
+Quantity NUMBER(4) DEFAULT 1 CHECK (Quantity>0)
+)
+____________________________________________________________________________________________________________________________
 ASS 8
 CREATE TABLE Supplier(
 Supplierid VARCHAR2(6) PRIMARY KEY,
