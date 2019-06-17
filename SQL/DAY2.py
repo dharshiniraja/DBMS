@@ -36,3 +36,6 @@ Name VARCHAR2(20) PRIMARY KEY,
 Location VARCHAR2(30) NOT NULL,
 ManagerName VARCHAR2(30) UNIQUE
 )
+__________________________________________________________________________________________________________________________
+ASS 6
+ALTER TABLE STORE RENAME COLUMN Name TO StoreName
