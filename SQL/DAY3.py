@@ -34,3 +34,48 @@ EXC 18
 UPDATE Product SET DISCOUNT=25 WHERE CATEGORY='Sports'
 
 ************************************************************************************************************************
+EXC 19
+UPDATE Product SET PRICE=50 WHERE CATEGORY='Apparel' AND PDESC='Trouser'
+
+************************************************************************************************************************
+EXC 20
+UPDATE Salesman SET SNAME='Jenny',LOCATION='Bristol' WHERE SID=3
+
+************************************************************************************************************************
+EXC 21
+DELETE FROM SaleDetail WHERE SALEID=1004
+
+************************************************************************************************************************
+EXC 22
+DELETE FROM SaleDetail WHERE SALEID=1004
+
+************************************************************************************************************************
+ASS 16
+INSERT INTO Article(ArCode,ArName,Rate,Quantity,Class) VALUES('A1001','Mouse',500,0,'C')
+
+***********************************************************************************************************************
+ASS 17
+INSERT INTO Store(StoreName,Location,ManagerName) VALUES('Loyal World','Infy Campus, Mysore','Rohan Kumar')
+
+***********************************************************************************************************************
+ASS 18
+INSERT INTO Bill(BillNo,StoreName,Shopperid,ArCode,Amount,BillDate,QuantitY) VALUES(1001,'Loyal World',101,'A1001',1000,'20-OCT-15',2)
+
+********************************************************************************************************************************************
+ASS 19
+INSERT INTO Supplier VALUES('S501','Avaya Ltd',9012345678,'Mysore')
+
+******************************************************************************************************************************
+ASS 20
+SELECT DESCR,PRICE FROM Item WHERE DESCR LIKE '%Hard disk'
+
+******************************************************************************************************************************
+ASS 21
+SELECT QUOTATIONID,SNAME,ITEMCODE,QUOTEDPRICE,QDATE,QSTATUS FROM Quotation WHERE QSTATUS='Rejected' OR QSTATUS='Closed'
+
+***************************************************************************************************************************
+ASS 22
+SELECT DESIGNATION,SALARY FROM EmpDetails WHERE DESIGNATION='Manager' OR DESIGNATION='Billing Staff'
+
+*****************************************************************************************************************************
+ASS 23
