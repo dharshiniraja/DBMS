@@ -79,3 +79,54 @@ SELECT DESIGNATION,SALARY FROM EmpDetails WHERE DESIGNATION='Manager' OR DESIGNA
 
 *****************************************************************************************************************************
 ASS 23
+SELECT roid,location FROM RETAILOUTLET WHERE MANAGERID IS NULL
+
+***************************************************************************************************************************
+ASS 24
+SELECT orderid, quotationid ,status FROM ORDERS WHERE ORDERDATE>='1-Dec-2014' AND ORDERDATE<='1-Jan-2015'
+
+**************************************************************************************************************************
+ASS 25
+SELECT  ITEMCODE, DESCR , PRICE FROM Item WHERE  CATEGORY='B' AND DESCR LIKE '%Shirt' OR 
+DESCR LIKE '% Skirt' AND CATEGORY='B'
+
+**************************************************************************************************************************
+ASS 26
+SELECT DISTINCT DESIGNATION , SALARY FROM EMPDETAILS 
+
+**************************************************************************************************************************
+ASS 27
+SELECT ITEMCODE,DESCR ,PRICE FROM ITEM 
+
+**************************************************************************************************************************
+ASS 28
+SELECT quotationid, sname FROM quotation WHERE QSTATUS='Accepted' OR QSTATUS='Rejected'
+
+**************************************************************************************************************************
+ASS 29
+SELECT  itemcode,DESCR, price FROM Item WHERE DESCR LIKE '_r%'
+
+**************************************************************************************************************************
+ASS 30
+SELECT DISTINCT ITEMTYPE FROM ITEM 
+
+**************************************************************************************************************************
+ASS 31
+SELECT  orderid, quotationid, status, pymtdate FROM ORDERS WHERE PYMTDATE IS NULL
+
+**************************************************************************************************************************
+ASS 32
+SELECT DISTINCT ITEMTYPE,CATEGORY FROM ITEM 
+
+**************************************************************************************************************************
+ASS 33
+SELECT EMPID,SALARY AS "Current Salary",SALARY*1.1 AS "New Salary",
+SALARY*1.1-SALARY AS "Incremented Amount" FROM EMPDETAILS
+
+**************************************************************************************************************************
+ASS 34
+INSERT INTO CITY VALUES('Mysore')
+
+**************************************************************************************************************************
+ASS 35
+INSERT INTO ADDRESS VALUES (350, 'Electronics City','Mysore',570018,'Karnataka')
